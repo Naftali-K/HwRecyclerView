@@ -4,15 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/viewLong">
+
+    <ImageView
+        android:id="@+id/contactImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="@id/viewLong"
+        app:layout_constraintLeft_toLeftOf="@id/viewLong"
+        app:layout_constraintBottom_toBottomOf="@id/viewLong"
+        />
 
     <TextView
+        android:id="@+id/contactName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toRightOf="@id/contactImg"
+        app:layout_constraintTop_toTopOf="@id/contactImg"
+        android:layout_marginStart="8dp"
+        android:hint="Name"/>
+
+    <TextView
+        android:id="@+id/contactFamilyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/contactImg"
+        app:layout_constraintTop_toBottomOf="@id/contactName"
+        android:layout_margin="8dp"
+        android:hint="Family Name"/>
+
+    <TextView
+        android:id="@+id/contactNumberPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/contactImg"
+        app:layout_constraintTop_toBottomOf="@id/contactFamilyName"
+        android:layout_margin="8dp"
+        android:hint="Number Phone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
