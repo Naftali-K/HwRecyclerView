@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="250dp"
     tools:context=".MainActivity"
-    android:id="@+id/viewLong">
+    android:id="@+id/viewLayOut">
 
     <ImageView
         android:id="@+id/contactImg"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="8dp"
-        app:layout_constraintTop_toTopOf="@id/viewLong"
-        app:layout_constraintLeft_toLeftOf="@id/viewLong"
-        app:layout_constraintBottom_toBottomOf="@id/viewLong"
+        app:layout_constraintTop_toTopOf="@id/viewLayOut"
+        app:layout_constraintLeft_toLeftOf="@id/viewLayOut"
+        app:layout_constraintBottom_toBottomOf="@id/viewLayOut"
         />
 
     <TextView
