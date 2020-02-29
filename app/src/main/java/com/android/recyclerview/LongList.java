@@ -14,5 +14,8 @@ public class LongList extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recycle_view); // connecting to view
 
+        ContactAdapter adapter = new ContactAdapter("long");
+        recyclerView.setAdapter(adapter);
+
     }
 }
